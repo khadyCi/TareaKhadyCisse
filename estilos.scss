@@ -1,0 +1,245 @@
+$color1: #00e575;
+$color2: #819CA9;
+$color3: #29434e;
+$color4: #365866;
+$color5: white;
+$color6: rebeccapurple;
+$ancho20: 20px;
+$ancho20p:20%;
+$ancho5: 5px;
+$ancho18: 18px;
+$ancho10: 10px;
+$ancho30: 30px;
+$ancho100: 100%;
+$ancho1: 90vw;
+$ancho10: 10px;
+$ancho30a: 30vw;
+$ancho40:40%;
+$ancho50: 50%;
+$ancho120: 120px;
+$ancho200: 200px;
+$ancho0: 0px;
+$ancho100p: 100px;
+$ancho50p: 50px;
+$ancho30p: 30%;
+
+$posicion1: center;
+$posicion2: left;
+$posicion3: relative;
+$posicion4: justify;
+
+
+//Scss del header
+
+h1{
+    width: $ancho100;
+    height: $ancho100p;
+    background-color: $color3;
+    margin: $ancho0;
+    text-align: $posicion1;
+    font-size: $ancho50p;
+    font-family: oblique bold 120% cursive;
+    color: $color2;
+    padding-top: $ancho30;
+}
+
+body{
+    margin: $ancho0;
+    padding: $ancho0;
+    background-color: $color2;
+}
+
+//
+nav{
+    width: $ancho100;
+    background-color: $color1;
+    
+}
+
+nav ul{
+    list-style: none;
+    position: $posicion3;
+    margin: $ancho0;
+    padding: $ancho0;
+}
+
+nav > ul > li{
+    display: inline-block;
+}
+a:hover{
+    background-color: $color4;
+    color: $color5;
+    
+}
+
+nav  ul li:hover{
+    background-color: $color1;
+}
+nav > ul > li > a{
+    color: $color3;
+    text-decoration: none;
+    display: block;
+    padding: $ancho20;
+    word-spacing: $ancho20p;
+    margin-left: $ancho200;
+
+}
+
+.titulo{
+    padding-top: $ancho50p;
+}
+.contenedor{
+    margin-top: $ancho50p;
+    margin-left: $ancho30p;
+}
+
+
+
+//SCSS del fichero Apuntes.html
+
+main{
+    background-color: $color6;
+    width: $ancho100;
+    float: $posicion2;    
+}
+article h1{
+    padding-top:20px;
+    font-size: 30px;
+    color: $color2;
+}
+
+aside{
+    float: $posicion2;
+    width: $ancho100;
+    background-color: $color6;
+    margin-top: $ancho10;
+    
+}
+
+article{
+    margin: $ancho30;
+}
+
+.container{
+    margin: $ancho20;
+    padding: $ancho20;
+}
+
+h3{
+    text-align: $posicion1;
+    font-size: $ancho30;
+}
+
+p{
+    text-align: $posicion4;
+    font-size: $ancho20;
+}
+ul li{
+    font-size: $ancho18;
+}
+
+ul li u b{
+    font-size: $ancho18;
+}
+h4{
+    font-size: $ancho20;  
+    text-align: $posicion1;
+}
+
+//Movil
+@media (min-width: 768px) { 
+    body{
+        background-color: $color2;
+        text-align: $posicion4;
+    }
+
+    main{
+        background-color: $color6;
+        width: $ancho100;
+        float: $posicion2;
+        margin: $ancho20;
+    }
+
+    aside{
+        width: $ancho100;
+        background-color: $color6;
+        float: $posicion2;
+        margin-top: $ancho5;
+        
+    }
+
+    }
+
+    // Tablets en horizonal y escritorios normales
+
+@media (min-width: 1024px) { 
+    body{
+        background-color: $color2;
+        text-align: $posicion4;
+    }
+
+    main{
+        background-color: $color6;
+        width: $ancho50;
+        float: $posicion2;
+
+        
+    }
+
+    aside{
+        float: $posicion2;
+        width: $ancho40;
+        background-color: $color6;
+        margin-top: $ancho20;
+    }
+}
+
+    
+
+
+  
+  img source{
+    
+    max-width: $ancho100;
+    height: $ancho30a;
+    text-align: $posicion1;
+    margin-left: auto;
+    margin-right: auto;
+     display: block;
+    }
+  .foto1{
+    width: $ancho200;
+    margin: $ancho120;
+    border: 1px solid black;
+    padding: $ancho30;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    img {
+      max-width: $ancho1;
+      width: $ancho1;
+      height: $ancho1;
+      padding-bottom: $ancho10;
+    }
+    source{
+        max-width: $ancho1;
+        width: $ancho1;
+        height: $ancho1;
+        padding-bottom: $ancho10; 
+    }
+    
+  }
+
+
+
+//SCSS imagene
+h2{
+    text-align: $posicion1;
+    color: $color3;
+    font-size: $ancho30;
+}
+
+
+
+

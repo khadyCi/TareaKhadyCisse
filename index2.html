@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <style>
+        body{
+            background-color: #819CA9;
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            
+            width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+            box-shadow: 15px 15px 15px rgb(41, 67, 78);
+        }
+        
+
+  
+  
+  
+  
+  
+  /* Mi  GaleriA*/
+  
+  img{
+    
+    max-width: 100%;
+    height: 30vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+     display: block;
+    }
+  .foto1{
+    width: 200pxpx;
+    margin: 120px;
+    border: 1px solid black;
+    padding: 30px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    img {
+      max-width: 90vw;
+      width: 90vw;
+      height: 90vW;
+      padding-bottom: 10px;
+    }
+    
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ribera De Castilla</h1>
+        <div class="navegacion">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio </a></li>
+                    <li><a href="Apuntes.html">Teoria</a></li>
+                    <li>
+                        <a href="index2.html">Imagenes</span></a>
+                    </li>
+                    <li><a href="TAREA/index.html">Videos </span></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    
+    
+   
+        <article role="article"  >
+            <h2 tabindex="0">Belleza del polo norte durante el hivierno</h2>
+            <div class="picture" >
+                <!--
+                    Aqui doy las etiquetas semanticas para que los sordos y los ciegos tengan accesibilidad a la imagen  con 
+                    el arial label y al alt. tambien para aficilitar a los lectores de pantalla
+                -->
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="img/foret1980.jpg 1x, img/foret1980.jpg 2x  " aria-labelledby="descripcion" tabindex="0" alt="La savana en hivierno"/>
+        
+                <p id="descripcion" tabindex="0">La savana en hivierno</span>.</p>
+                    <source media="(min-width: 600px)" srcset="img/foret1280.jpg 1x, img/foret1280.jpg 2x,"  tabindex="0" alt="La savana en hivierno"/> <!--Aqui uso el alt que tambien nos permite lo mismo-->
+                    <img src="img/foret427.jpg" aria-labelledby="descripcion" tabindex="0"  alt="La savana en hivierno" >
+                </picture>
+            </div>
+        </article>
+ 
+    
+    
+</body>
+</html>

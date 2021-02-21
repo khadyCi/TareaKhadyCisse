@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Ribera De Castilla</h1>
+        <div class="navegacion">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio </a></li>
+                    <li><a href="Apuntes.html">Teoria</a></li>
+                    <li>
+                        <a href="index2.html">Imagenes</span></a>
+                    </li>
+                    <li><a href="TAREA/index.html">Videos </span></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+   <div class="container">
+    <main tabindex="0">
+        <!--
+            Estoy usando etiquetas semanticas para facilitar a los lectores de pantalla una mejor transcripcion
+            con tabindex="0" estoy dando el foco a todo los elementos de la pagina.
+        -->
+        <article role="article" tabindex="0">
+            <h1 tabindex="0">accesibilidad</h1>
+            <h3 tabindex="0">Pautas de accesibilidad de contenido web</h3>
+            <p tabindex="0">
+                Las WCAG brindan información general completa de qué significa que el contenido se accesible 
+                pero también permiten aliviar el contenido abrumador condensando las pautas WCAG en una lista 
+                de comprobación fácil de seguir, dirigida especialmente a la web.
+                WCAG se organiza en torno a cuatro principios e menudo llamados por el acrónimo POUR:
+                <ul tabindex="0">
+                    <li tabindex="0">Perceptibilidad: Hacer que todos los usuarios perciben el contenido de la pagina.</li>
+                    <li tabindex="0">Operable: Hacer que cada usuario pueda utilizar cada componente de la interfaz de usuario y navegar por el contenido</li>
+                    <li tabindex="0">Comprensible: Hacer que los usuarios comprenden y entenden la interfaz para evitar confusiones.</li>
+                    <li tabindex="0">Robusto: hacer que el contenido de nuestro pagina sea compatible a varias navegadores.</li>
+                </ul>
+
+            </p>
+            <h3 tabindex="0">Comprensión de la diversidad de usuarios</h3>
+            <p tabindex="0">
+                El aprendizaje de la accesibilidad va junto a la comprensión de la diversidad de usuarios que hay en el mundo.
+                SE privilegia a que las páginas sean accesible a todos los tipos de usuarios que hay en el mundo. Porque existe 
+                muchas tipos de discapacidades en los usuarios: visual, motriz, auditiva, cognitiva… Ejemplo: los usuarios sin 
+                visión pueden usar un lector de pantalla, braille o una combinación de ambos, zoom de navegador y tecnología 
+                de texto a oralidad.
+
+            </p>
+            <p tabindex="0">
+                &nbsp;&nbsp;&nbsp;&nbsp;Los discapacitados de <b>motriz</b> usan teclado, dispositivo de interrupción, control de voz o hasta un dispositivo 
+                de rastreo oculto para interactuar con su computador
+            </p>
+            <p tabindex="0">
+                &nbsp;&nbsp;&nbsp;&nbsp;Las discapacidades <b>auditivas</b> varían en personas totalmente sordas y aquellos con dificultades auditivas. Muchos
+                 usan dispositivos comunes como audífonos. Para ellos hay que usar subtítulos estilo de video y transcripciones, 
+                 algunos tipos de alternativa si el sonido forma parte de la interfaz.
+            </p>
+            <p tabindex="0">
+                &nbsp;&nbsp;&nbsp;&nbsp;Los discapacitados <b>cognitivas</b> como trastorno de déficit de atención y autismo hacen que estos usuarios necesiten acceder a las cosas de 
+                otra forma. Ellos usan funcionalidades de zoom para hacer que la lectura y la concentración sean más sencillas.
+
+            </p>
+            <p tabindex="0">
+                A través del canalización sobre todo estos tipos de discapacidad, hacer una web para solo usuarios con buen visión, 
+                audición, movimiento y cognición perfectos resultan muy acotados y contraproducente. Para evitar esta situación, 
+                intentaremos crear páginas web accesibles. Para esto trataremos tres áreas temáticas principales:
+            </p>
+            <ul tabindex="0">
+                <li tabindex="0"><u><b>Focos</b></u>: haremos uso del teclado en lugar de mouse para usuario con discapacidad motriz pero también para 
+                    garantizar que el IU seste en buena forma para todos los usuarios.</li><br>
+                <li tabindex="0"><u><b>Semántica</b></u>: nos aseguremos que nuestro interfaz de usuario sea sólida que funcione con una variedad de 
+                    tecnologías de asistenciales.</li><br>
+                <li tabindex="0"><u><b>Estilos</b></u>: Analizaremos el diseño y evaluaremos algunas técnicas para hacer que los elementos visuales 
+                    de la interfaz sean lo más flexibles y útiles posible.</li><br>
+            </ul>
+            <h3 tabindex="0">Foco: Usamos tabindex = 0 (será ilustrada en app web)</h3>
+            <p tabindex="0">
+                Existen varios usuarios motrices. Para ellos, es crucial contar con una buena estrategia de foco para
+                un control de la pantalla (elemento de entrada, campos, casilla de verificación, botones o un vínculo) 
+                y brindarle una experiencia positiva.El foco determina en que parte de la página tienen lugar los eventos 
+                en un momento determinado. Por ejemplo un campo de texto. El elemento que tiene el foco se indica con un 
+                anillo de foco, su estilo depende dl navegador y de los estilo de ajustes del autor. 
+
+            </p>
+            <h3 tabindex="0">Semántica</h3>
+            <p tabindex="0">
+                En esta parte se privilegia el uso de la tecnoligia asistencial que puede incluir zoom del navegador o algo 
+                especifico como un controlador de juego diseñado a medida, también puede ser un dispositivo separado como 
+                pantalla en braille o implementado en el computador como la voz de control… útil por ejemplo a las personas 
+                con baja visión pueden usar el zoom de la cámara de su Smartphone para ver mejor algo que es pequeño en el 
+                mundo real. Al momento de programar también tenemos que tener en cuento también de esa variedad de dispositivos
+                 tecnológicos.
+            </p>
+            <ul tabindex="0">
+                <li tabindex="0">
+                    Los lectores de pantalla: permiten a los personas con discapacidad visual e usar una computadora leyendo 
+                    texto de pantalla en voz alta generada. Y el iusuario puede controlarlo con el movimiento del cursor a área 
+                    relevante con el teclado.Nos brindan información si están bien diseñadas sobre los elementos que encuentra:
+                        <ol tabindex="0">
+                            <li tabindex="0">El rol o tipo de elemento</li>
+                            <li tabindex="0">El nombre del elemento</li>
+                            <li tabindex="0">El valor del elemento</li>
+                            <li tabindex="0">El estado del elemento (habilitado o inhabilitado).</li>
+                        </ol>
+                </li>
+                <li tabindex="0">Tenemos que tener en cuenta los roles que tienen los imágenes para descubrir el tipo de alternativa de texto 
+                    debería tener .Y en conclusión todas las imágenes importantes deberían de tener un alt descriptivo y los 
+                    decorativos un alt vacio.</li>
+                <li>o	Es muy importante el uso de las etiquetas semánticas header, footer, nav, article, section, main y aside. 
+                    Esos elementos específicamente bridan pistas estructurales en la página sin forzar un estilo incorporado.</li>
+                
+            </ul>
+            <h3 tabindex="0">Semántica ARIA</h3>
+            <p tabindex="0">El uso de los elementos de HTML nativos no solo basta para brindar mayor accesibilidad a nuestro. Y la semántica 
+                ARIA nos permite expresar lo que no puede expresar el HTML por su cuenta. Dándonos unos atributos que modifican 
+                la forma en que un elemento se traduce al árbol de accesibilidad  con el uso DOM +ARIA.</p>
+
+        </article>
+    </main>
+    <aside role="complementary" tabindex="0">
+        <h4 tabindex="0">Temas</h4>
+        <ul tabindex="0">
+            <li tabindex="0">Accesibilidad</li>
+            <ul tabindex="0">
+                <li tabindex="0">Focus</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Introduction to focus</li>
+                    <li tabindex="0">DOM Order Matters</li>
+                    <li tabindex="0">Using tabindex</li>
+                </ul>
+                <li tabindex="0">Semantics Buit-in</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Introduction ti Semantics</li>
+                    <li tabindex="0">The Accessibility Tree</li>
+                    <li tabindex="0">Text Alternatives for Images</li>
+                    <li tabindex="0">navigating Content</li>
+                </ul>
+                <li tabindex="0">Semantics and Aria</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Introduction to ARIA</li>
+                    <li tabindex="0">ARIA Labels and Relationships</li>
+                </ul>
+            </ul>
+        </ul>
+    </aside>
+   </div>
+    
+</body>
+</html>

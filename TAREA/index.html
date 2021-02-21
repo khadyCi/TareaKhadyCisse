@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos.css" type="text/css" />
+    <style>
+        img{
+            
+            width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+            box-shadow: 15px 15px 15px rgb(41, 67, 78);
+        }
+        .picture{
+            padding-top: 90px;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+        
+        .video{
+            margin: 50px;
+            text-align: center;
+            
+        }
+        video{
+            max-width: 100%;
+            height: auto;
+            
+        }
+       
+       
+        
+    </style>
+</head>
+<body>
+    <header class="tete">
+        <h1>Ies Ribera De Castilla</h1>
+        <nav>
+        
+            <div class="navegacion">
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="../index.html">Inicio </a></li>
+                        <li><a href="../Apuntes.html">Teoria</a></li>
+                        <li>
+                            <a href="../index2.html">Imagenes</span></a>
+                        </li>
+                        <li><a href="index.html">Videos </span></a></li>
+                    </ul>
+                </nav>
+            </div>
+                
+         </nav>   
+    </header>
+    
+    
+        <!--
+            <h1>Fotos de paisajes</h1>
+        
+            <div class="picture">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="img/foret1980.jpg 1x, img/foret1980.jpg 2x  " alt="Zebra"/>
+                    <source media="(min-width: 600px)" srcset="img/foret1280.jpg 1x, img/foret1280.jpg 2x," alt="Zebra"/>
+                    <img src="img/foret427.jpg"  alt="gazela" >
+                </picture>
+            </div>
+        -->
+       
+
+       
+        <div class="video">
+            <video style="width: 800px;" controls poster="Mi-poster.jpg" >
+                <!--
+                    <video style="width: 480px;" controls poster="video-poster.jpg" loop autoplay preload="auto" muted>
+                -->
+        
+                <!-- Video en distincto formato-->
+                <source src="Mi_Video480x270.webm" type="video/webm">
+                <source src="Mi_Video480x270.mp4" type="video/mp4"> 
+                    Tu navegador no es compatible a ese tipo de video.
+                    
+                    <!-- Subtitulos en Español, Ingles, Frances-->
+                <track  kind="subtitles" label="castellano" srclang="es" src="español.vtt"  default></track>
+                <track  kind="subtitles" label="Inglés" srclang="en" src="english.vtt"  ></track>
+                <track  kind="subtitles" label="Francés" srclang="fr" src="french.vtt"  default></track>
+        
+                <!--
+                   validar vtt: https://quuz.org/webvtt/
+                -->
+          </video>
+          </div>
+        
+    
+</body>
+</html>
